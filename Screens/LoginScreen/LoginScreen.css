@@ -1,0 +1,142 @@
+@font-face {
+    font-family: 'Poppins';
+    src: url('/Fonts/Poppins-Medium.ttf') format('truetype');
+}
+
+*{
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins';
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+}
+
+#leftContent{
+    width: 45vw;
+    height: 100vh;
+   
+    display:flex;
+}
+
+#loginArea{
+    margin: auto;
+    
+    height: 65%;
+    width: 55%;
+    border-radius: 10px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-content: space-between;
+    box-shadow: 0px 0px 6px 1px rgba(0, 0, 0, 0.384);
+}
+
+#headerContent{
+    height: 20%;
+    width: 100%;
+    
+}
+
+#logoName{
+    display: flex;
+    justify-content: center;
+    margin-top: 3%;
+    font-size: 2vw;
+}
+
+#logoName>span{
+    color: #017a72;
+}
+
+#mainContent{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    flex-flow: row wrap;
+    align-content: center;
+    justify-content: flex-end;
+}
+
+.loginContent{
+    width: 85%;
+    
+    margin: 10% auto 0 auto;
+    height: 25%;
+    font-size: 0.8vw;
+    color: #005D57;
+}
+
+.loginBox{
+    background-color: white;
+    width: 100%;
+    height: 60%;
+    border-radius: 10px;
+    border: 0.2px solid;
+    border-color: #005d57d5;
+    outline: none;
+    transition: 200ms linear;
+}
+
+.loginBox:focus{
+    transform: scale(1.02);
+}
+
+#mainContent>a{
+    color: #005D57;
+    text-decoration: none;
+    font-size: 0.5vw;
+    display: flex;
+    justify-content: right;
+    margin-right: 10%;
+}
+
+#bottomContent{
+    width: 100%;
+    height: 20%;
+}
+
+#loginBtt{
+    width: 35%;
+    height: 45%;
+    background-color: #019187;
+    margin: auto;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 200ms linear;
+    cursor: pointer;
+}
+
+#loginBtt:hover{
+    transform: scale(1.05);
+}
+
+#loginBtt>span{
+    color: white;
+    font-size: 1.2vw;
+}
+
+#otherOptions{
+    margin: 2.5% auto;
+    width: fit-content;
+    font-size: 0.6vw;
+}
+
+a{
+    color: black;
+}
+
+
+#rightContent{
+    display: flex;
+    width: 55vw;
+    height: 100vh;
+    background-color: aquamarine;
+}
+
