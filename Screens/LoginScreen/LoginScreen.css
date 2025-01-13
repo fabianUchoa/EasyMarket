@@ -3,6 +3,11 @@
     src: url('/Fonts/Poppins-Medium.ttf') format('truetype');
 }
 
+@font-face {
+    font-family: 'Poppins-bold';
+    src: url('/Fonts/Poppins-SemiBold.ttf') format('truetype');
+}
+
 *{
     margin: 0;
     box-sizing: border-box;
@@ -137,6 +142,71 @@ a{
     display: flex;
     width: 55vw;
     height: 100vh;
-    background-color: aquamarine;
+
+    
+    align-items: center;
 }
 
+#informationArea{
+    
+    width: 35vw;
+    height: 65vh;
+    display: flex;
+    justify-content: center;
+    align-content: space-between;
+    flex-flow: row wrap;
+}
+
+#imgContentArea{
+    width: 90%;
+    height: 60%;
+    
+}
+
+#imgContentArea>img{
+    width: 100%;
+    height: 100%;
+}
+
+#textContent{
+    width: 90%;
+    height: 30%;
+    
+}
+
+#textContent>p{
+    text-align: justify;
+    font-size: 0.75vw;
+}
+
+#sideOptions{
+    
+    width: 20vw;
+    height: 40vh;
+    display: flex;
+    flex-flow: row wrap;
+    align-content: space-around;
+    justify-content: center;
+}
+
+.bttOptions{
+    width: 55%;
+    height: 17%;
+    background-color: #019187;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 200ms linear;
+    cursor: pointer;
+}
+
+.bttOptions>span{
+    color: white;
+    font-size: 1vw;
+    font-family: 'Poppins-bold';
+}
+
+.bttOptions:hover{
+    transform: scale(1.1);
+}

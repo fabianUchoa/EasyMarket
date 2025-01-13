@@ -40,24 +40,25 @@
     </section>
     <section id="rightContent">
         <div id="informationArea">
-            <div id="imgContent">
-
+            <div id="imgContentArea">
+                <img src="/Imgs/LoginScreen/imgLowTaxes.png" alt="LowTaxesImg" id="imgChanger">
             </div>
             <div id="textContent">
-                
+                <p id="textChanger">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestias ipsum quibusdam natus nihil quas accusamus vitae dolor debitis voluptatum possimus explicabo repellat dolorum et pariatur dicta numquam, cumque ut quo?Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus accusantium odit quos, sint aperiam ducimus suscipit quidem beatae corrupti. Ea, rem! Unde dolorum alias distinctio beatae mollitia quas modi et. Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore recusandae temporibus eligendi nam repellat rem.</p>
             </div>
         </div>
         <div id="sideOptions">
-            <div class="bttOptions">
-
+            <div class="bttOptions" id="safeOption" onmouseover="changeInformationContentToSafe()">
+                <span>Safe</span>
             </div>
-            <div class="bttOptions">
-
+            <div class="bttOptions" id="lowTaxesOption" onmouseover="changeInformationContentToLowTaxes()">
+                <span>Low Taxes</span>
             </div>
-            <div class="bttOptions">
-
+            <div class="bttOptions" id="easeOption" onmouseover="changeInformationContentToEase()">
+                <span>Ease</span>
             </div>
         </div>
     </section>
+    <script src="LoginScreen.js"></script>
 </body>
 </html>
