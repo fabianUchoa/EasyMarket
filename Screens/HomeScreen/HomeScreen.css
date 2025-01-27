@@ -21,7 +21,9 @@
 
 body{
     width: 100vw;
-    height: 100vh;
+    overflow-x: hidden;
+    height: max-content;
+    background-color: #dbdbdb;
 }
 
 #navBar{
@@ -93,22 +95,26 @@ body{
 header{
     width: 100vw;
     height: 60vh;
-    background-image: linear-gradient(to bottom,black, #00A297);
+    background-image: linear-gradient(to bottom,black, #00A297, #dbdbdb46);
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.previousAnnouncement>img{
+.previousAnnouncement>img, .nextAnnouncement>img{
     width: 4vw;
     height: auto;
     margin-right: 2vw;
+    margin-left: 2vw;
+    transition: 200ms linear;
+    cursor: pointer;
 }
 
-.nextAnnouncement>img{
-    width: 4vw;
-    height: auto;
-    margin-left: 2vw;
+
+
+.nextAnnouncement>img:hover, .previousAnnouncement>img:hover{
+    transform: scale(1.1);
+
 }
 
 .backgroundAnnouncement{
@@ -149,12 +155,12 @@ header{
 
 
 
-.productImg{
+.announcementImg{
     width: 40%;
     height: 90%;
 }
 
-.productImg>img{
+.announcementImg>img{
     width: 100%;
     height: 100%;
 }
@@ -183,4 +189,288 @@ header{
 .secondTitle>img{
     width: 3.3vw;
     margin-left: 1vw;
+}
+
+main{
+    display: flex;
+    width: 100vw;
+    height: max-content;
+    flex-flow: row wrap;
+    align-content: space-around;
+    
+}
+
+main>h1{
+    font-size: 2.5vw;
+    margin-left: 6vw;
+    width: max-content;
+   
+}
+
+main>h1>img{
+    width: 3vw;
+}
+
+section{
+    box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.281);
+}
+
+.announcementProducts{
+    width: 80%;
+    height: 45vh;
+    background-color: white;
+    padding: 2vh 2vw;
+    margin: auto;
+    display: flex;
+    flex-flow: row wrap;
+    border-radius: 15px;
+    justify-content: space-around;
+}
+
+.announcementProducts>h1{
+    width: 100%;
+    color: rgb(53, 53, 53);
+}
+
+.productModelAnnouncement{
+    width: 18%;
+    height: max-content;
+    display: flex;
+    flex-flow: row wrap;
+    cursor: pointer;
+    justify-content: center;
+}
+
+.productImg{
+    width: 85%;
+    height: 20vh;
+    
+}
+
+.productImg>img{
+    width: 100%;
+    height: 100%;
+}
+
+.productDetails{
+    width: 90%;
+    height: 4vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.storeName{
+    font-family: 'Poppins';
+    font-weight: 600;
+    display: flex;
+    font-size: 1vw;
+}
+
+.productRating{
+    display: flex;
+    align-content: center;
+    align-items: center;
+    font-size: 1vw;
+}
+
+
+
+.productDescription{
+    font-family: 'Poppins-thin';
+    color: rgb(0, 0, 0);
+    font-size: 0.65vw;
+    text-align: justify;
+    width: 90%;
+    height: 4vh;
+    overflow-wrap: break-word;
+    overflow: hidden;
+}
+
+.productValue{
+    font-size: 1.4vw;
+    width: 90%;
+    height: 3.5vh;
+    margin-top: 1vh;
+}
+
+.productQuota{
+    font-size: 0.65vw;
+    color: rgb(0, 197, 0);
+    width: 70%;
+}
+
+.productsCoupon{
+    width: 80%;
+    height: 27.5vh;
+    background-color: white;
+    display: flex;
+    justify-self: center;
+    margin: 10vh auto 10vh auto;
+    border-radius: 5px;
+}
+
+.couponContent{
+    width: 50%;
+    height: 100%;
+    
+    display: flex;
+    flex-flow: column wrap;
+}
+
+.couponContent>img{
+    width: 40%;
+    height: 100%;
+}
+
+.couponInformations{
+    display: flex;
+    flex-flow: row wrap;
+    padding: 3vh 2vw;
+    width: 60%;
+    height: 100%;
+}
+
+.categorieCoupon{
+    width: 50%;
+    font-size: 0.8vw;
+    text-transform: uppercase;
+    color: rgb(34, 34, 34);
+}
+
+.advertisingSquare{
+    width: 100%;
+    margin-top: 2vh;
+    font-size: 1.5vw;
+    overflow-wrap: break-word;
+    text-transform: uppercase;
+    color: rgb(53, 53, 53);
+}
+
+.categoriePageButton{
+    width: 40%;
+    height: 5vh;
+    margin: 2vh 2vw 0 0;
+    border-radius: 10px;
+    background-color: #038bda;
+    text-decoration: none;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.collectionsContent{
+    width: 80%;
+    height: 45vh;
+    margin: 10vh auto;
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.collectionsProducts{
+    width: 25%;
+    height: 100%;
+    border-radius: 10px;
+    background-color: white;
+    display: flex;
+    flex-flow: column wrap;
+    overflow: hidden;
+}
+
+.collectionImg{
+    width: 100%;
+    height: 70%;
+    transition: 400ms linear;
+    cursor: pointer;
+}
+
+.collectionImg:hover{
+    transform: scale(1.1);
+}
+
+.collectionListProducts{
+    width: 100%;
+    height: 30%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    cursor: pointer;
+}
+
+.collectionItens{
+    width: 20%;
+    height: 50%;
+    border-radius: 5px;
+    transition: 200ms linear;
+}
+
+.collectionItens:hover{
+    border: 1px solid lightblue;
+    transform: scale(1.05);
+}
+
+.categoriesList{
+    width: 80%;
+    height: 50vh;
+    margin: 10vh auto;
+    background-color: white;
+    display: flex;
+    flex-flow: row wrap;
+    padding: 0 4%;
+    border-radius: 15px;
+}
+
+.categoriesList>h1{
+    width: 100%;
+    height: 8vh;
+    display: flex;
+    align-items: center;
+     
+    font-size: 1.3vw;
+}
+
+.categoriesList>h1>a{
+    font-size: 0.6vw;
+    font-weight: 300;
+    margin-left: 1vw;
+    color:#038bda ;
+    text-decoration: none;
+}
+
+.categorieSquare{
+    width: 20%;
+    height: 8vh;
+    border: solid 1px lightgray;
+    border-radius: 8px;
+    overflow: hidden;
+    padding: 0.5vh 0.5vw;
+    margin: 0 2%;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    transition: 200ms linear;
+}
+
+.categorieSquare:hover{
+    transform: scale(1.05);
+    border: solid 0.5px lightblue;
+}
+
+.categorieSquare>span{
+    margin-left: 1vw;
+}
+
+.categorieSquare>img{
+    width: 30%;
+    height: 100%;
+}
+
+footer{
+    width: 100%;
+    height: 40vh;
+    
+    background-color: white;
 }
